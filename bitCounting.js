@@ -1,10 +1,9 @@
 var countBits = function(n) {
     let binary = n.toString(2);
-    console.log(binary);
     let occ = (binary.match(/1/g) || []).length;
-    console.log(occ);
+    return occ;
 };
 
 var countBits2 = n => n.toString(2).split('0').join('').length; // better solution
 
-countBits(1234);
+let result = countBits(1234);
